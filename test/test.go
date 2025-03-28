@@ -76,3 +76,15 @@ var (
 	BRL = Currency{"brl", "巴西里奥"}
 	THB = Currency{"thb", "泰国泰铢"}
 )
+
+func PrintArray() {
+
+	var arr [10]int
+	arr[1] = 1
+	arr[2] = 2
+	arr[3] = 3
+	arr[4] = 4
+	arr[5] = 5
+
+	fmt.Println(arr)
+}

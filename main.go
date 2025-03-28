@@ -44,4 +44,6 @@ func main() {
 	fmt.Println(currency) // 會印出整個enum
 	fmt.Println(currencyCode)
 	fmt.Println(currencyDescription)
+
+	test.PrintArray()
 }
