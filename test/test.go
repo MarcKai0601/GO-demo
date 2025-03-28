@@ -58,7 +58,7 @@ const (
 )
 
 // iota 是 Go 語言專為常量列舉而設計的關鍵字，它在簡單的數值枚舉情況特別好用。當你只需要定義一組整數枚舉時，iota 可以讓程式碼更簡潔，並自動生成遞增的整數值。
-// 所以iota 只能用在數字的場合
+// 所以iota 只能用在數字的場合 ,它預設開始值是 0 ,每新增一行就+1
 
 func (d Day) String() string {
 	return [...]string{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}[d]
