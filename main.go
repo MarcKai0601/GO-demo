@@ -35,4 +35,13 @@ func main() {
 
 	today = test.Friday
 	fmt.Println(today)
+
+	var currency test.Currency = test.THB
+	var currencyCode string = test.BRL.Code
+	var currencyDescription string = test.BRL.Description
+	// Code、Description 為string 所以要宣告為string
+	fmt.Printf("貨幣代碼: %s, 描述: %s\n", test.VND.Code, test.VND.Description)
+	fmt.Println(currency) // 會印出整個enum
+	fmt.Println(currencyCode)
+	fmt.Println(currencyDescription)
 }

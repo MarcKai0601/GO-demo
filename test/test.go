@@ -57,6 +57,22 @@ const (
 	Saturday
 )
 
+// iota 是 Go 語言專為常量列舉而設計的關鍵字，它在簡單的數值枚舉情況特別好用。當你只需要定義一組整數枚舉時，iota 可以讓程式碼更簡潔，並自動生成遞增的整數值。
+// 所以iota 只能用在數字的場合
+
 func (d Day) String() string {
 	return [...]string{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}[d]
 }
+
+// Currency 枚舉的結構體
+type Currency struct {
+	Code        string // 貨幣代碼
+	Description string // 描述
+}
+
+var (
+	VND = Currency{"vnd", "越南盾"}
+	INR = Currency{"inr", "印度卢比"}
+	BRL = Currency{"brl", "巴西里奥"}
+	THB = Currency{"thb", "泰国泰铢"}
+)
