@@ -46,4 +46,6 @@ func main() {
 	fmt.Println(currencyDescription)
 
 	test.PrintArray()
+
+	test.PrintSlice()
 }

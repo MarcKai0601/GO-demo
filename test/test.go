@@ -88,3 +88,10 @@ func PrintArray() {
 
 	fmt.Println(arr)
 }
+
+func PrintSlice() {
+	// slice 為動態陣列 不需限定陣列長度
+	slice := []int{1, 2, 3}
+	// := 是短變數宣告（Short Variable Declaration）的語法糖
+	fmt.Println(slice)
+}
